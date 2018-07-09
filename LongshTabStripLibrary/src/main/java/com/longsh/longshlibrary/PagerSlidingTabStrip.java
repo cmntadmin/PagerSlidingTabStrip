@@ -245,13 +245,14 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
     }
 
     //设置红点
-    public void setMsgToast(int msgPosition, boolean isMsg) {
+    public void setMsgToast(int msgPosition, boolean isMsg,int count) {
         View v = tabsContainer.getChildAt(msgPosition);
         if (v != null) {
             if (isMsg) {
-                v.findViewById(R.id.iv_msg).setVisibility(VISIBLE);
+                v.findViewById(R.id.tv_msg).setVisibility(VISIBLE);
+                ((TextView) v.findViewById(R.id.tv_msg)).setText(String.valueOf(count));
             } else {
-                v.findViewById(R.id.iv_msg).setVisibility(GONE);
+                v.findViewById(R.id.tv_msg).setVisibility(GONE);
             }
         }
     }
