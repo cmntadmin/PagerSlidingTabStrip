@@ -10,22 +10,25 @@
 
     <TextView
         android:id="@+id/tv_content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/tv_msg"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_alignTop="@+id/tv_content"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/tv_content"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignEnd="@+id/tv_content"
+        android:layout_alignParentTop="true"
         android:background="@drawable/ic_dot"
         android:gravity="center"
         android:minHeight="5dp"
+        android:layout_marginTop="8dp"
         android:minWidth="5dp"
-        android:textSize="12sp"
-        android:visibility="gone" />
+        android:textColor="#fff"
+        android:textSize="8sp"
+        android:visibility="gone"
+        android:layout_alignRight="@+id/tv_content" />
 
 
 </RelativeLayout>
