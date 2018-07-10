@@ -404,7 +404,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
             if (isToastpager) {
                 View v = tabsContainer.getChildAt(position);
                 if (v != null) {
-                    v.findViewById(R.id.iv_msg).setVisibility(GONE);
+                    v.findViewById(R.id.tv_msg).setVisibility(GONE);
                 }
             }
 
