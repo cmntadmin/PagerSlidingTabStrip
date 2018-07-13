@@ -244,8 +244,13 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         this.isToastpager = isToastpager;
     }
 
+
+    public void setPageSelected() {
+        pageListener.onPageSelected(0);
+    }
+
     //设置红点
-    public void setMsgToast(int msgPosition, boolean isMsg,int count) {
+    public void setMsgToast(int msgPosition, boolean isMsg, int count) {
         View v = tabsContainer.getChildAt(msgPosition);
         if (v != null) {
             if (isMsg) {
